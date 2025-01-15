@@ -1,0 +1,77 @@
+
+
+.board-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.board-row {
+  display: flex;
+}
+
+.winner-message {
+  font-size: 24px;
+  font-weight: bold;
+  color: green;
+  margin-bottom: 10px;
+  animation: celebration 2s infinite;
+}
+
+.reset-button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.reset-button:hover {
+  background-color: #45a049;
+}
+
+.player-turn {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+@keyframes celebration {
+  0%, 100% {
+      transform: scale(1);
+  }
+  50% {
+      transform: scale(1.2);
+  }
+}
+.welcome-message {
+  font-size: 26px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+  animation: welcome-animation 3s ease-in-out;
+}
+
+@keyframes welcome-animation {
+  0% {
+      transform: scale(0.8);
+      opacity: 0;
+  }
+  50% {
+      transform: scale(1.1);
+      opacity: 1;
+  }
+  100% {
+      transform: scale(1);
+      opacity: 1;
+  }
+}
